@@ -9,11 +9,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.sts</groupId>
-    <artifactId>spring-boot-postgre-sql</artifactId>
+    <artifactId>spring-boot-my-sql</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>spring-boot-postgre-sql</name>
-    <description>Spring Boot Postgre SQL</description>
+    <name>spring-boot-my-sql</name>
+    <description>Spring Boot My SQL</description>
     <url/>
     <licenses>
         <license/>

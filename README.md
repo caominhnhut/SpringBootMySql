@@ -1,6 +1,6 @@
-# Spring Boot PostgreSQL Example
+# Spring Boot MySQL Example
 
-A simple Spring Boot application demonstrating integration with PostgreSQL database.
+A simple Spring Boot application demonstrating integration with MySQL database.
 
 ## Prerequisites
 
@@ -10,7 +10,7 @@ A simple Spring Boot application demonstrating integration with PostgreSQL datab
 
 ## Setup
 
-1. Start PostgreSQL using Docker Compose:
+1. Start MySQL using Docker Compose:
 ```bash
 docker compose up -d
 ```
@@ -42,7 +42,7 @@ Choose the appropriate profile when running the application.
 Update `src/main/resources/application.properties`:
 
 ```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/your_database
+spring.datasource.url=jdbc:mysql://localhost:3306/your_database
 spring.datasource.username=your_username
 spring.datasource.password=your_password
 ```
@@ -81,7 +81,7 @@ spring.datasource.password=your_password
 - Spring Data JPA
 - Spring Security
 - Spring Audit
-- PostgreSQL
+- MySQL
 - Flyway (Database Migration)
 - Maven
 - Lombok

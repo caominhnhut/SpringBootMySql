@@ -1,15 +1,15 @@
 spring:
   application:
-    name: spring-boot-postgre-sql
+    name: spring-boot-my-sql
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/spring-boot-postgre-sql
-    username: postgres
+    url: jdbc:mysql://localhost:3306/spring_boot_my_sql
+    username: user
     password: password
-    driver-class-name: org.postgresql.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database-platform: org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: validate
     show-sql: false

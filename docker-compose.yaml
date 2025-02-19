@@ -1,18 +1,19 @@
 version: '3.8'
 
 services:
-  spring-boot-postgre-sql:
-    image: postgres:16
-    container_name: spring-boot-postgre-sql
+  mysql:
+    image: mysql:8.0
+    container_name: spring-boot-my-sql
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: spring-boot-postgre-sql
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: spring_boot_my_sql
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
       TZ: UTC
     ports:
-      - "5432:5432"
+      - "3306:3306"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - mysql_data:/var/lib/mysql
 
 volumes:
-  postgres_data:
+  mysql_data:
